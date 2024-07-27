@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { products } from "../constants";
 const ShoeCard = ({ imgURL, changeBigShoeImg, bigShoeImg }) => {
   const handleClick = () => {
     if (bigShoeImg !== imgURL.bigShoe) {

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { xSymbol, hamburger } from "../assets/icons";
 import { headerLogo } from "../assets/images";
 import { navLinks } from "../constants";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -13,7 +14,7 @@ const Nav = () => {
   return (
     <header className="padding-x py-8 absolute z-10 w-full max-lg:bg-blue-50">
       <nav className="flex justify-between items-center max-container">
-        <a href="/">
+        <NavLink to="/">
           <img
             src={headerLogo}
             alt="logo"
@@ -21,15 +22,15 @@ const Nav = () => {
             height={29}
             className="m-0 w-[129px] h-[29px]"
           />
-        </a>
+        </NavLink>
         <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
           {navLinks.map((item) => (
             <li key={item.label}>
-              <a
-                href={item.href}
+              <NavLink
+                to={item.href}
                 className="font-montserrat leading-normal text-lg text-slate-gray hover:text-coral-red transition duration-300 font-semibold">
                 {item.label}
-              </a>
+              </NavLink>
             </li>
           ))}
         </ul>

@@ -23,7 +23,7 @@ const Hero = () => {
           <span className="text-coral-red inline-block mt-3">Nike</span> Shoes
         </h1>
         <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
-          Discover Stylish Nike arrivals,quality comfort, and innovation for
+          Discover Stylish Nike arrivals, quality comfort, and innovation for
           your active life
         </p>
         <Button label="Shop Now" iconURL={arrowRight} />
@@ -48,12 +48,12 @@ const Hero = () => {
           className=" object-contain relative z-10"
         />
         <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
-          {shoes.map((shoe) => (
-            <div>
+          {shoes.map((shoe, index) => (
+            <div key={index}>
               <ShoeCard
                 imgURL={shoe}
-                changeBigShoeImg={(shoe) => setBigShoeImg(shoe)}
-                BigShoeImg={bigShoeImg}
+                changeBigShoeImg={() => setBigShoeImg(shoe.bigShoe)}
+                bigShoeImg={bigShoeImg}
               />
             </div>
           ))}

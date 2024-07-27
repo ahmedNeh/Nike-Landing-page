@@ -12,20 +12,28 @@ import {
   bigShoe3,
   customer1,
   customer2,
-  shoe4,
-  shoe5,
   shoe6,
   shoe7,
   thumbnailShoe1,
   thumbnailShoe2,
   thumbnailShoe3,
+  jordan1Mid,
+  pandaDunk1,
+  pandaDunk2,
+  pandaDunk3,
+  pandaDunk4,
+  pandaDunk5,
+  jordan1Mid1,
+  jordan1Mid2,
+  jordan1Mid3,
+  jordan1Mid4,
 } from "../assets/images";
 
 export const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#about-us", label: "About Us" },
-  { href: "#products", label: "Products" },
-  { href: "#contact-us", label: "Contact Us" },
+  { href: "/", label: "Home" },
+  { href: "/About-us", label: "About Us" },
+  { href: "/Products", label: "Products" },
+  { href: "/Contact-us", label: "Contact Us" },
 ];
 
 export const shoes = [
@@ -51,24 +59,66 @@ export const statistics = [
 
 export const products = [
   {
-    imgURL: shoe4,
-    name: "Nike Legend Essential-2",
-    price: "$70.99",
+    id: "Panda-Dunks-Low",
+    imgURL: pandaDunk1,
+    name: "Panda Dunks Low",
+    price: "$119.99",
+    description:
+      "The Nike Dunk Low is an easy score for your closet. This mid-‘80s hoops icon returns with super-durable construction and original colors. With ankle padding and rubber traction, this one is a slam dunk.",
+    sizes: ["40 EU", "41 EU", "43 EU", "44 EU", "46 EU", "47 EU", "48 EU"],
+    otherShoeImgsURL: [
+      pandaDunk1,
+      pandaDunk2,
+      pandaDunk3,
+      pandaDunk4,
+      pandaDunk5,
+    ],
   },
   {
-    imgURL: shoe5,
-    name: " K-SWISS Mens Cr-Terrati",
-    price: "$99.99",
+    id: "Air-Jordan-1-Mid",
+    imgURL: jordan1Mid,
+    name: "Air Jordan 1 Mid",
+    price: "$90.99",
+    description:
+      "The Air Jordan 1 Mid brings full-court style and premium comfort to an iconic look. Its Air-Sole unit cushions play on the hardwood, while the padded collar gives you a supportive feel.",
+    sizes: ["43 EU", "44 EU", "45 EU", "46 EU", "47 EU", "48 EU"],
+    otherShoeImgsURL: [jordan1Mid1, jordan1Mid2, jordan1Mid3, jordan1Mid4],
   },
   {
+    id: "Nike-Md-Runner-2",
     imgURL: shoe6,
     name: "Nike Md Runner 2",
     price: "$110.20",
+    description: "",
+    sizes: [
+      "40 EU",
+      "41 EU",
+      "42 EU",
+      "43 EU",
+      "44 EU",
+      "45 EU",
+      "46 EU",
+      "47 EU",
+      "48 EU",
+    ],
   },
   {
+    id: "New-Balance-247-Sport-Pack",
     imgURL: shoe7,
     name: "New Balance 247 Sport Pack",
     price: "55.90",
+    description: "",
+    sizes: [
+      "40 EU",
+      "41 EU",
+      "42 EU",
+      "43 EU",
+      "44 EU",
+      "45 EU",
+      "46 EU",
+      "47 EU",
+      "48 EU",
+    ],
   },
 ];
 
@@ -109,17 +159,6 @@ export const reviews = [
 ];
 
 export const footerLinks = [
-  {
-    title: "Products",
-    links: [
-      { name: "Air Force 1", link: "/" },
-      { name: "Air Max 1", link: "/" },
-      { name: "Air Jordan 1", link: "/" },
-      { name: "Air Force 2", link: "/" },
-      { name: "Nike Waffle Racer", link: "/" },
-      { name: "Nike Cortez", link: "/" },
-    ],
-  },
   {
     title: "Help",
     links: [
